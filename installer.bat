@@ -42,3 +42,4 @@ echo # To run the downloader, press Windows key+R  #
 echo # and type `videodownloader`                  #
 echo #                                             #
 echo ###############################################
+pause >nul
