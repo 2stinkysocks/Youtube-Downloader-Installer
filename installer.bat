@@ -8,28 +8,6 @@ IF %ERRORLEVEL% EQU 0 (
    EXIT /B 1
 )
 
-echo ###############################################
-echo #                 IMPORTANT                   #
-echo #                                             #
-echo # This program requires node to be installed  #
-echo # on your computer                            #
-echo #                                             #
-echo # Current versions of nvm and npm will be     #
-echo # replaced                                    #
-echo #                                             #
-echo ###############################################
-pause
-
-if exist %APPDATA%\nvm (
-    rmdir /s /q %APPDATA%\nvm
-    echo deleting old nvm...
-)
-
-if exist "C:\Users\Program Files\nodejs" (
-    rmdir /s /q "C:\Users\Program Files\nodejs"
-    echo deleting old npm...
-)
-
 if exist "C:\Windows\videodownloader.cmd" (
     del /f "C:\Windows\videodownloader.cmd"
     echo deleting old script...
